@@ -15,14 +15,21 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.helloWorld"
+    "onCommand:kimmo.helloWorld",
+    "onCommand:kimmo.pantsOnFire"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "extension.helloWorld",
-        "title": "Hello World"
+        "command": "kimmo.helloWorld",
+        "title": "Hello World",
+        "category": "Kimmo"
+      },
+      {
+        "command": "kimmo.pantsOnFire",
+        "title": "Pants on fire",
+        "category": "Kimmo"
       }
     ]
   },

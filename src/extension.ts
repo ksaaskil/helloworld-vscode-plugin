@@ -12,17 +12,22 @@ export function activate(context: vscode.ExtensionContext) {
   // The command has been defined in the package.json file
   // Now provide the implementation of the command with registerCommand
   // The commandId parameter must match the command field in package.json
-  const disposable = vscode.commands.registerCommand(
-    "extension.helloWorld",
-    () => {
-      // The code you place here will be executed every time your command is executed
+  const disposable = vscode.commands.registerCommand("kimmo.helloWorld", () => {
+    // The code you place here will be executed every time your command is executed
 
-      // Display a message box to the user
-      vscode.window.showInformationMessage("Hello VS Code!");
+    // Display a message box to the user
+    vscode.window.showInformationMessage("Hello VS Code!");
+  });
+
+  const disposable2 = vscode.commands.registerCommand(
+    "kimmo.pantsOnFire",
+    () => {
+      vscode.window.showWarningMessage("Your pants are on fire!");
     }
   );
 
   context.subscriptions.push(disposable);
+  context.subscriptions.push(disposable2);
 }
 
 // this method is called when your extension is deactivated
