@@ -14,9 +14,14 @@
   "categories": [
     "Other"
   ],
+  "capabilities": {
+    "hoverProvider": "true"
+  },
   "activationEvents": [
     "onCommand:kimmo.helloWorld",
-    "onCommand:kimmo.pantsOnFire"
+    "onCommand:kimmo.pantsOnFire",
+    "onLanguage:javascript",
+    "onLanguage:typescript"
   ],
   "main": "./out/extension.js",
   "contributes": {
